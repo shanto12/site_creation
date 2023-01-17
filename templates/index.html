@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Random Image</title>
+    <title>Diet Plan Generator</title>
 </head>
-<body>
-    <h1>Here's a randomly selected image:</h1>
-    <img src="{{ url_for('static', filename=image) }}" alt="Random Image">
+<body style="background-color: pink;">
+<h1>Generate Your Diet Plan</h1>
+<form action="/" method="POST">
+    <label for="text_input">Text Input:</label>
+    <input type="text" id="text_input" name="text_input">
+    <br>
+    <label for="select_input">Select Input:</label>
+    <select id="select_input" name="select_input">
+        <option value="adsf">adsf</option>
+        <option value="asdddd">asdddd</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
 </body>
+<style>
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    input[type="text"], select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
 </html>
